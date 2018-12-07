@@ -1,0 +1,31 @@
+{
+  "fitbit": {
+    "appUUID": "9df1202f-4d9c-4d22-9245-8de65c0d5b1a",
+    "appType": "app",
+    "appDisplayName": "Transit Around Israel",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#009688",
+    "requestedPermissions": [
+      "access_location",
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Transit Around Israel"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "^2.0.2",
+    "@fitbit/sdk-cli": "^1.0.2",
+    "fitbit-sdk-typed": "^1.0.1"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}

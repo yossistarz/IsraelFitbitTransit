@@ -1,0 +1,12 @@
+Tasks that needs to be done:
+1. Need to brake down the messages from the companion (just a bit too large)
+2. Need Rebuild data in the watch (taking into acount the base time since the data is sent in minutes relative to the message now time).
+3. Add UI
+  3.1 Add refresh logo
+  3.2 Add refresh button
+  3.3 Add a list of items that will be refreshed from the cache
+  3.4 Change the data to be saved in a cache
+
+4. Companion needs to refresh data according to the location change
+5. Companion needs to keep refreshing only when it is relevant (like after a lot of time when the watch app was not in use, stop
+   refreshing until next big location change -> Maybe disable this until next app load)

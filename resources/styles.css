@@ -1,0 +1,35 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+}
+
+#loading {
+  x:275;
+  y:0;
+  width:25;
+  height:25;
+  fill: fb-white;
+}
+
+#routeLines{
+  fill:red;
+}
+
+.tile-list-item {
+  height: 88;
+}
+
+.tile-list-item text {
+  font-family: System-Regular;
+  fill: "white";
+}
+
+.tile-divider-bottom {
+  x: 0;
+  y: 100%-2;
+  width: 100%;
+  height: 2;
+  fill: #A0A0A0;
+}

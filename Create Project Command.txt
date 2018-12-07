@@ -1,0 +1,10 @@
+https://dev.fitbit.com/build/guides/command-line-interface/
+
+npx create-fitbit-app <project-name>
+cd <project-name>
+npm install
+
+npx fitbit-build
+
+npx fitbit
+build
