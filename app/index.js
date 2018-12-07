@@ -2,12 +2,7 @@ import { peerSocket } from "messaging";
 import document from "document";
 import * as fs from "fs";
 import { me } from "appbit";
-
-var groupTypes = {
-  Next5Minutes : 1,
-  InStation : 2,
-  PassedStation : 3
-}
+import extraInfo from "./extraInfoPage.js";
 
 // When data is stale for more than 2 minutes, it will show a stale icon.
 var ALLOWED_DATA_VERSION = 1;
@@ -122,15 +117,15 @@ function buildUI(data){
       let to = tile.getElementById("to");
       
       if (value.gt){
-        if (value.gt == groupTypes.Next5Minutes){
+        if (value.gt == extraInfo.groupTypes.Next5Minutes){
           txt.text = `${value.n} in ${value.t} m`;
           to.style.fill = "cyan";
         }
-        else if (value.gt == groupTypes.InStation){
+        else if (value.gt == extraInfo.groupTypes.InStation){
           txt.text = `${value.n} In Station`;
           to.style.fill = "green";
         }
-        else if (value.gt == groupTypes.PassedStation){
+        else if (value.gt == extraInfo.groupTypes.PassedStation){
           txt.text = `${value.n}`;
           to.style.fill = "red";
         }
